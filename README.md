@@ -45,7 +45,7 @@ flowchart TD
     C -->|orchestrates| D[GitLab Container]
     D -->|serves| E[GitLab Web Interface]
     D -->|binds| F[Ports 80, 443, 22]
-    D -->|writes to| G[Volumes (data, logs, config)]
+    D -->|writes to| G["Volumes: data, logs, config"]
 ```
 
 > This diagram shows how your local machine uses Docker Compose to orchestrate a GitLab container, which provides services via web and SSH, and persists state using local volumes.
